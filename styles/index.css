@@ -1,0 +1,169 @@
+/* Header */
+header a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 400;
+  font-family: 'Space+Grotesk', sans-serif;
+  font-size: 14px;
+}
+
+header li {
+  display: inline-block;
+  padding-left: 2rem;
+}
+
+header .current a {
+  color: #000000;
+  text-decoration: underline;
+}
+
+header a:hover {
+  color: #E85E4D;
+  text-decoration: underline;
+}
+
+/* Display text */
+h1 {
+  font-family: 'Space+Grotesk', sans-serif;
+  color: black;
+}
+
+#text_h1 {
+  font-weight: 400;
+  font-size: 36px;
+}
+
+/* Multiskils */
+#Skills a{
+  color:  #000000;
+  text-decoration: underline;
+}
+
+#Skills:hover a{
+  text-decoration-color: #E85E4D;
+}
+
+#Skills:hover a:after{
+  content: ' UI/UX Design/ Branding/ Editorial Design/ Web(Html/js/css) /Adobe Creative Suite #Digital&Print ';
+  color: #E85E4D;
+}
+
+/* Gif */
+a > div {
+  display: none;
+}
+
+a:hover > div {
+  display: inline;
+  position: absolute;
+  top: 115px;
+  right: 200px;
+}
+
+#twist:hover {
+  color: #E85E4D;
+  text-decoration: underline;
+}
+
+blink {
+  animation: blinker 0.9s linear infinite;
+  color: #6EEA42;
+}
+
+@keyframes blinker {
+  50% { opacity: 0; }
+}
+
+.blink-one {
+  animation: blinker-one 1s linear infinite;
+}
+
+@keyframes blinker-one {
+  0% { opacity: 0; }
+}
+
+.blink-two {
+  animation: blinker-two 1.4s linear infinite;
+}
+
+@keyframes blinker-two {
+  100% { opacity: 0; }
+}
+
+/* About me */
+.aboutme {
+  font-family: 'DM sans', sans-serif;
+  font-size: 25px;
+  color: white;
+  text-align: left;
+}
+
+#download {
+  padding-left: 45empx;
+  margin: 0;
+}
+
+#job {
+  color: #6EEA42;
+  text-decoration: none;
+}
+
+#inbox a {
+  color: #6EEA42;
+  text-decoration: none;
+}
+
+#inbox:hover a {
+  text-decoration-color: #00308f;
+}
+
+#inbox:hover a:after {
+  content: ' [Send me an e-mail] ';
+  color: #6EEA42;
+}
+
+#resume a {
+  color: #6EEA42;
+  text-decoration: none;
+}
+
+#resume:hover a {
+  text-decoration-color: #00308f;
+}
+
+#resume:hover a:after {
+  content: ' [Download my CV.pdf] ';
+  color: #6EEA42;
+}
+
+.pic {
+  /*border: 0.01px solid white;*/
+  width: 2%;
+}
+
+.pic:hover {
+  transform: scale(6);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+#first {
+  color: #6EEA42;
+}
+
+/* icons */
+.fa {
+  color: white;
+  font-size: 6.25rem;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  opacity: 50%;
+}
+
+.fa:hover {
+  opacity: 1;
+  color: #E85E4D;
+  text-decoration: none;
+}

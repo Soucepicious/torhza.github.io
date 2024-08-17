@@ -1,0 +1,81 @@
+.client-description {
+    padding: 50px 0;
+    background-color: #FBE9D0;
+}
+
+.client-description h2, .client-description h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    padding-left: 70px;
+}
+
+.client-description p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.client-description ul {
+    list-style-type: none;
+    padding-left: 70px;
+}
+
+.client-description ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+#lets{
+    padding-top: 6rem;
+    padding-left: 8.875rem;
+    text-align: left;
+}
+
+#lets2{
+    padding-top: 2.5rem;
+    padding-left: 100px;
+    text-align: left;
+    font-size: 100px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+#smalllets{
+    padding-left: 100px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+#serv{
+    font-size: .875rem;
+    color: #E85E4D;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+#serv2{
+    font-size: .875rem;
+    color: #E85E4D;
+    text-transform: uppercase;
+    text-decoration: underline;
+    padding-left: 0px;
+}
+
+
+
+.container img {
+    height: 100%;
+    width: 100%;
+  }
+
+.container img {
+    object-fit: contain;
+  /* or
+    object-fit: cover; */
+  } 
+  
+.client-description a:hover{
+    color: #E85E4D;
+    text-decoration: underline;
+}
