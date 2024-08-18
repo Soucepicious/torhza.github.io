@@ -1,3 +1,19 @@
+/* Hide scrollbars but allow scrolling */
+html, body {
+    overflow: hidden; /* Hide default scrollbars */
+    height: 100%; /* Ensure the body takes full height */
+  }
+  
+  .scrollable-content {
+    overflow: auto; /* Allow scrolling within this container */
+    -ms-overflow-style: none;  /* Hide scrollbar for Internet Explorer and Edge */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+  }
+  
+  .scrollable-content::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+  }
+
 /* Global */
 ::-webkit-scrollbar {
     display: none;
@@ -23,7 +39,7 @@ body {
 /* Logo */
 .logo {
     font-family: "Space Grotesk", sans-serif; /* Replace with your actual font */
-    font-size: 24px; /* Adjust the size as needed */
+    font-size: 2.5rem; /* Adjust the size as needed */
     font-weight: bold;
     color: black; /* Initial color */
     text-decoration: none;
@@ -39,9 +55,9 @@ body {
 header a {
     color: #000000;
     text-decoration: none;
-    font-weight: 400;
-    font-family: 'Space+Grotesk', sans-serif;
-    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1rem;
   }
   
   header li {
@@ -62,7 +78,7 @@ header a {
 
 /* Layout */
 .location_logo {
-    padding-top: 2.5rem;
+    padding-top: 2rem;
     padding-right: 1rem;
     padding-left: 1rem;
     padding-bottom: 2rem;
@@ -120,8 +136,6 @@ footer h6 {
 }
 
 
-
-
 .magazine-link {
     font-size: 1.2em;
     margin-top: 20px;
@@ -137,3 +151,12 @@ footer h6 {
     color: #E85E4D;
     text-decoration: underline;
 }
+
+#navigation{
+    color: #E85E4D;
+}
+
+
+
+
+

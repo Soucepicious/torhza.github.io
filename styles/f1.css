@@ -19,32 +19,22 @@
     padding-left: 70px;
 }
 
-.client-description ul li {
+.client-description ul {
     font-size: 1.1em;
-    margin-bottom: 10px;
+    margin-bottom: .625rem;
 }
 
-#lets{
-    padding-top: 6rem;
-    padding-left: 8.875rem;
-    text-align: left;
-}
+/* Base styles */
 
-#lets2{
-    padding-top: 2.5rem;
-    padding-left: 100px;
-    text-align: left;
-    font-size: 100px;
+#lets2 {
+    margin-top: 0%;
+    /*font-size: 38ch;*/
+    font-size: 20vw;
+    line-height: 1;
+    text-align: center;
     font-weight: 900;
     text-transform: uppercase;
-}
-
-#smalllets{
-    padding-left: 100px;
-    text-align: left;
-    font-size: 14px;
-    font-weight: 400;
-    text-transform: uppercase;
+    font-family: Impact, sans-serif;
 }
 
 #serv{
@@ -52,6 +42,14 @@
     color: #E85E4D;
     text-transform: uppercase;
     text-decoration: underline;
+    font-weight: 300;
+}
+
+#disc{
+    font-size: 0.875rem;
+    padding-left: 5.3rem;
+    margin-top: -0.75rem;
+    font-weight: 300;
 }
 
 #serv2{
@@ -62,7 +60,19 @@
     padding-left: 0px;
 }
 
+#serv3{
+    font-size: .875rem;
+    color: #E85E4D;
+    text-transform: uppercase;
+    text-decoration: underline;
+    padding-left: 0px;
+}
 
+
+header .current a {
+    color: #000000;
+    text-decoration: underline;
+  }
 
 .container img {
     height: 100%;
@@ -78,4 +88,72 @@
 .client-description a:hover{
     color: #E85E4D;
     text-decoration: underline;
+}
+
+/* Ensure no extra padding or margin on ul */
+ul {
+    margin: 0;
+    padding-left: 20px; /* Indentation of the list, adjust if necessary */
+}
+
+#twist {
+    position: relative;
+    display: inline-block;
+    cursor: pointer; /* Indicates that the element is interactive */
+    color: #000; /* Default text color */
+    transition: color 0.3s ease; /* Smooth color transition */
+    text-decoration: underline;
+  }
+  
+  #twist::before {
+    content: ''; /* No text content */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease; /* Smooth transition for the overlay */
+    z-index: 1; /* Make sure the overlay is above the text but below the image */
+  }
+  
+  #twist img {
+    display: none; /* Hide the image initially */
+    position: absolute;
+    top: 100%; /* Position the image below the text */
+    left: 0;
+    width: 300px; /* Adjust width to make the image larger */
+    height: auto; /* Maintain aspect ratio */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0; /* Hide the image initially with opacity */
+  }
+  
+  #twist:hover {
+    color: #E85E4D; /* Change text color on hover */
+  }
+  
+  #twist:hover::before {
+    opacity: 1; /* Show the color overlay on hover */
+  }
+  
+  #twist:hover img {
+    display: inline; /* Show the image on hover */
+    opacity: 1; /* Make the image fully opaque */
+    transform: translateY(10px); /* Optional: move the image down slightly for effect */
+  }
+  
+body > section > div > p > a {
+    color: #000000;
+}
+
+body > section > div > p {
+    margin-top: -10.25rem;
+    margin-bottom: -4.625rem;
+    text-align: right;
+    font-size: .875rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+body > section > div > div > div > p > a {
+    color: #000000;
 }
