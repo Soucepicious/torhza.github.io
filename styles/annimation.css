@@ -1,0 +1,28 @@
+.hover-link {
+    text-decoration: underline;
+    color: black; /* Initial color */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.hover-link:hover {
+    color: #E85E4D; /* Color on hover */
+}
+
+#twist {
+    display: inline-block;
+}
+
+#twist a {
+    color: black; /* Initial color */
+    text-decoration: none; /* Remove underline */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+#twist a:hover {
+    color: #E85E4D; /* Color on hover */
+}
+
+#twist img {
+    vertical-align: middle; /* Align image with text */
+    margin-left: 5px; /* Add some space between text and image */
+}

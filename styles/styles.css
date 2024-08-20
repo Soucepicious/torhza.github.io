@@ -39,7 +39,7 @@ body {
 /* Logo */
 .logo {
     font-family: "Space Grotesk", sans-serif; /* Replace with your actual font */
-    font-size: 2.5rem; /* Adjust the size as needed */
+    font-size: 2rem; /* Adjust the size as needed */
     font-weight: bold;
     color: black; /* Initial color */
     text-decoration: none;
@@ -87,7 +87,8 @@ header a {
 }
 
 .location_h1 {
-    padding-top: 15rem;
+    font-family: 'Space Grotesk';
+    padding-top: 9rem;
     padding-right: 1rem;
     padding-left: 1rem;
     padding-bottom: 0.5rem;
@@ -114,26 +115,42 @@ header a {
     padding-bottom: 0.5rem;
 }
 
-/* Footer */
-footer h6 {
-    padding: 5px;
-    margin: 0;
-    font-family: 'Space+Grotesk', monospace;
-    text-align: center;
-    font-size: 10px;
-    color: white;
+/* Font Awesome Icons (white color) */
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .25rem 11rem;
 }
 
-.workfooter,
-.projectsfooter,
-.mainfooter {
+footer .footer-icons {
+    display: flex;
+    gap: 15px; /* Space between icons */
+}
+
+footer .footer-icons a {
+    color: white;
+    font-size: 1rem; /* Adjust icon size */
+}
+
+footer h6 {
+    margin: 0;
+    font-family: 'Space Grotesk', monospace;
+    font-size: .8rem;
+    color: white;
+    text-align: right;
+}
+
+.workfooter {
     left: 0;
     bottom: 0;
     background-color: #E85E4D;
     width: 100%;
     margin: 0;
     position: fixed;
+    z-index: 2;
 }
+
 
 
 .magazine-link {

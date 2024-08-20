@@ -1,34 +1,31 @@
-
 /* Display text */
-h1 {
-  font-family: 'Space+Grotesk', sans-serif;
-  color: black;
-  font-weight: 400;
-  font-size: 36px;
-  /*text-transform: uppercase;*/
+#con1{
+  margin-top: 15%;
+  padding-bottom: 15rem;
+  text-align: center;
 }
 
- .con1{
-  padding-top: 10rem;
-  padding-bottom: 2.5rem;
-  padding-left: 210px;
-  padding-right: 210px;
-  text-align: left;
-  font-size: 100px;
+#textproject{
+  font-family: Impact, sans-serif;
+  font-size: 9.2vw;
+  line-height: 1;
   font-weight: 900;
+  text-align: center;
   text-transform: uppercase;
 }
 
-.con2{
-  padding-top: 2rem;
-  padding-bottom: 2.5rem;
-  padding-left: 210px;
-  padding-right: 210px;
-  text-align: left;
-  text-align: left;
-  font-size: 100px;
-  font-weight: 900;
+#con2{
+  text-indent: 1.125rem;
+  color: white;
   text-transform: uppercase;
+  font-weight: 300;
+  text-align: left;
+  background-color: #E85E4D;
+  line-height: 1;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: .875rem;
+  line-height: 2;
+  text-decoration: underline;
 }
 
 .con3{
@@ -47,6 +44,7 @@ h1 {
   flex-direction: row;
   width: 100%;
   height: 70vh;
+  margin-bottom: .9%;
 }
 
 .item {
@@ -90,7 +88,7 @@ h1 {
 
 a{
   text-decoration: none;
-  color: #0074D9;
+  color: #E85E4D;
 }
 
 .underline{
@@ -114,4 +112,270 @@ a{
     right: auto;
     width: 100%;
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root {
+  --bg-color: transparent;
+  --p-color: transparent;
+  --a-color: transparent;
+  --a-hover-color: transparent;
+}
+
+*, *::before, *::after {
+  outline: none;
+  box-sizing: inherit;
+}
+
+* {
+  font-family: "Space Grotesk", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  background: var(--bg-color);
+}
+
+#boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: -18%;
+  margin-bottom: -50%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0; /* No gap between the frames */
+  max-width: 800px;
+  max-height: 400px;
+  /* Remove any border property to eliminate the outline */
+}
+
+.frame {
+  width: 400px;
+  height: 200px;
+  background: transparent url("/images/ciao-frames.png") 0 0 no-repeat;
+  box-sizing: border-box; /* Ensure border is included in width/height */
+  /* No border should be applied here as well */
+}
+
+
+#one {
+  -webkit-animation: letterC 1s steps(12) infinite;
+          animation: letterC 1s steps(12) infinite;
+}
+
+#two {
+  -webkit-animation: letterI 1s steps(12) infinite;
+          animation: letterI 1s steps(12) infinite;
+}
+
+#three {
+  -webkit-animation: letterA 1s steps(12) infinite;
+          animation: letterA 1s steps(12) infinite;
+}
+
+#four {
+  -webkit-animation: letterO 1s steps(12) infinite;
+          animation: letterO 1s steps(12) infinite;
+}
+
+@-webkit-keyframes letterC {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -2400px;
+  }
+}
+@keyframes letterC {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -2400px;
+  }
+}
+
+@-webkit-keyframes letterI {
+  0% {
+    background-position: -400px 0;
+  }
+  100% {
+    background-position: -400px -2400px;
+  }
+}
+@keyframes letterI {
+  0% {
+    background-position: -400px 0;
+  }
+  100% {
+    background-position: -400px -2400px;
+  }
+}
+
+@-webkit-keyframes letterA {
+  0% {
+    background-position: -800px 0;
+  }
+  100% {
+    background-position: -800px -2400px;
+  }
+}
+@keyframes letterA {
+  0% {
+    background-position: -800px 0;
+  }
+  100% {
+    background-position: -800px -2400px;
+  }
+}
+
+@-webkit-keyframes letterO {
+  0% {
+    background-position: -1200px 0;
+  }
+  100% {
+    background-position: -1200px -2400px;
+  }
+}
+@keyframes letterO {
+  0% {
+    background-position: -1200px 0;
+  }
+  100% {
+    background-position: -1200px -2400px;
+  }
+}
+
+
+.project {
+  position: relative;
+  padding: 10px 0;
+}
+
+.project-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}
+
+.project-info.left {
+  justify-content: flex-start;
+}
+
+.project-info.right {
+  justify-content: flex-end;
+}
+
+.project-info h3 {
+  margin: 0;
+  padding: 0;
+  color: black;
+  transition: color 0.1s ease;
+  text-transform: uppercase;
+  font-family: 'Space Grotesk';
+  font-weight: 300;
+}
+
+.project-info p {
+  font-size: 14px;
+  color: black;
+  margin: 0 15px;
+}
+
+.project-info i {
+  color: #E85E4D;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.project::after { /* Line */
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background-color: #E85E4D;
+  opacity: 0.5;
+  transition: background-color 0.3s ease;
+}
+
+.project:hover::after {
+  background-color: white;
+}
+
+.project:hover .project-info i {
+  color: white;
+}
+
+.project-info.left:hover h3,
+.project-info.right:hover h3 { /* Big text */
+  color: black;
+}
+
+.project:hover { /* Bar */
+  background-color: #E85E4D;
+  transition: background-color 0.3s ease;
+}
+
+.project:hover .project-image {
+  display: block;
+}
+
+.hover-link {
+  color: black; /* Initial color */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+.hover-link:hover {
+  color: #E85E4D; /* Color on hover */
+}
+
+#twist {
+  display: inline-block;
+}
+
+#twist a {
+  color: black; /* Initial color */
+  text-decoration: none; /* Remove underline */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+#twist a:hover {
+  color: #E85E4D; /* Color on hover */
+}
+
+#twist img {
+  vertical-align: middle; /* Align image with text */
+  margin-left: 5px; /* Add some space between text and image */
 }

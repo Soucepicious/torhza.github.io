@@ -5,16 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="Yahya AIT-TORHZA">
 
-    <title>It's a Portfolio</title>
+    <title>Hello! @Portolio</title>
     <link rel="shortcut icon" href="./images/a2.svg">
     <link rel="stylesheet" href="./styles/styles.css">    
-    <link rel="stylesheet" href="./styles/index.css">    
+    <link rel="stylesheet" href="./styles/index.css">  
+    <link rel="stylesheet" href="./styles/annimation.css">  
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
@@ -22,10 +25,10 @@
     <header>
         <div class="container">
             <div class="location_logo">
-				<!--
+        <!--
                 <a href="index.html"><img src="./images/TR.png" alt="TORHZA:"></a>
-				-->
-				<a href="index.html" class="logo">Torhza.</a>
+        -->
+        <a href="index.html" class="logo">Torhza.</a>
             </div>
             <nav class="location_nav">
                 <ul>
@@ -41,14 +44,27 @@
 
     <section class="showcase">
         <div class="container">
-            <h1 class="location_h1" id="text_h1">
-                <strong>Hello, I'm Yahya!</strong>
-                <br><br>I am a <span id="Skills"><a><strong>multidesaplinary</strong></a></span>
-                Designer with a passion for dynamic layouts, striking visuals, and intuitive user experiences.
-                <br><br>Explore my <a href="work.html">Work</a> and let’s <a href="about.html">Connect</a><br>—let’s make something 
-                <span id="twist"><a>great<div><img src="./images/great.gif"></div></a></span>!
+            <h1 class="location_h1" id="text_h1" style="text-transform: uppercase;" >
+                <!--<p><strong style="text-transform: initial; font-weight: 100; font-size: 1.875rem;">Hello, I'm Yahya!</strong></p>-->
+                <p style="font-size: 4rem; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">I am a <span id="Skills"><a><strong style="cursor: pointer;">multidesaplinary</strong></a></span> Designer.</p>
+                <p>With a passion for bold design, thoughtful UX, and turning ideas into reality.</p>
             </h1>
         </div>
+    </section>
+
+    <section class="container">
+        <h1 style="font-weight: 300; font-size: 1.875rem; text-align: right;">
+            <br><br>Explore my 
+            <a class="hover-link" href="projects.html">work</a> 
+            and let’s 
+            <a class="hover-link" href="connect.html">connect</a>
+            <br>—let’s make something 
+            <span id="twist">
+                <a href="#">#great
+                    <div><img src="./images/great.gif" alt="Great GIF"></div>
+                </a>
+            </span>!
+        </h1>
     </section>
 
     <section class="location_icon">
@@ -69,8 +85,18 @@
     </section> 
     -->
 
-    <footer class="mainfooter">
-        <h6 class="text-center">Designed & Built by Yahya.Ait-Torhza - Copyright &copy;2024</h6>
+    <footer class="workfooter">
+        <div class="footer-content">
+            <div class="footer-icons">
+                <a href="https://www.linkedin.com/in/yahyatorhza" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://wa.me/yourwhatsappnumber" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+            <h6 style="text-transform: uppercase;">&copy;2024</h6>
+        </div>
     </footer>
 </body>
 </html>

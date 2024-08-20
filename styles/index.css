@@ -1,27 +1,3 @@
-/* Header */
-header a {
-  color: #000000;
-  text-decoration: none;
-  font-weight: 400;
-  font-family: 'Space+Grotesk', sans-serif;
-  font-size: 14px;
-}
-
-header li {
-  display: inline-block;
-  padding-left: 2rem;
-}
-
-header .current a {
-  color: #000000;
-  text-decoration: underline;
-}
-
-header a:hover {
-  color: #E85E4D;
-  text-decoration: underline;
-}
-
 /* Display text */
 h1 {
   font-family: 'Space+Grotesk', sans-serif;
@@ -30,7 +6,7 @@ h1 {
 
 #text_h1 {
   font-weight: 400;
-  font-size: 36px;
+  font-size: 3.5rem;
 }
 
 /* Multiskils */
@@ -44,8 +20,10 @@ h1 {
 }
 
 #Skills:hover a:after{
-  content: ' UI/UX Design/ Branding/ Editorial Design/ Web(Html/js/css) /Adobe Creative Suite #Digital&Print ';
+  content: ' UI/UX Design / Branding / Editorial Design / Web Design (HTML/CSS, Bootstrap, Visual Studio, Figma) / Adobe Creative Suite (Illustrator, Photoshop, InDesign, After Effects) / Print Production / Photography ';
   color: #E85E4D;
+  font-family: 'Space Grotesk', monospace;
+  font-weight: 300;
 }
 
 /* Gif */
@@ -64,6 +42,11 @@ a:hover > div {
   color: #E85E4D;
   text-decoration: underline;
 }
+
+
+
+
+
 
 blink {
   animation: blinker 0.9s linear infinite;
@@ -166,4 +149,8 @@ blink {
   opacity: 1;
   color: #E85E4D;
   text-decoration: none;
+}
+
+.explore:hover{
+  color: #E85E4D;
 }
